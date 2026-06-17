@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const BtnNormal = ({ title, href }) => {
   return (
     <motion.div
-      className="relative self-end inline-block px-8 py-2"
+      className="relative self-center mt-6 inline-block px-8 py-2 md:self-end"
       initial="rest"
       whileHover="hover"
       animate="rest"

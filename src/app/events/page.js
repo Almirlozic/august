@@ -1,6 +1,7 @@
 import { getEvents } from "@/lib/api";
 import EventsCalender from "@/components/EventsCalender";
 import Pagination from "@/components/Pagination";
+import H2Normal from "@/components/H2Normal";
 
 const EVENTS_PER_PAGE = 3;
 
@@ -14,6 +15,7 @@ export default async function EventsPage({ searchParams }) {
 
   return (
     <main>
+      <H2Normal title="EVENTS" bgImage="/assets/bg/footerbg.jpg" />
       <EventsCalender events={paginated} />
       <Pagination currentPage={page} totalPages={totalPages} basePath="/events" />
     </main>

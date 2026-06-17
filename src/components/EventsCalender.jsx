@@ -5,7 +5,7 @@ import BtnNormal from "./BtnNormal";
 
 export default function EventsCalender({ events }) {
   return (
-    <section className="flex flex-col gap-2">
+    <section className="flex flex-col gap-2 mt-8">
       {events.map((event, index) => (
         <article
           key={event.id}
