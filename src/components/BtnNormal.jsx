@@ -24,7 +24,11 @@ const BtnNormal = ({ title, href }) => {
         transition={{ duration: 0.4 }}
       />
 
-      <Link className="text-white text-xs uppercase tracking-widest" href={href}>
+      <Link
+        className="text-white text-xs uppercase tracking-widest focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2
+"
+        href={href}
+      >
         {title}
       </Link>
     </motion.div>

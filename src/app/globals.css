@@ -12,14 +12,15 @@
 }
 
 @theme inline {
-  --color-brand: oklch(65.35% 0.2419 9.26);
-  --color-bg: oklch(0% 0 0);
-  --color-text: oklch(100% 0 0);
+  --color-brand: oklch(0.6535 0.2419 9.26);
+  --color-bg: oklch(0 0 0);
+  --color-text: oklch(1 0 0);
   --font-sans: var(--font-ubuntu);
 }
 
 body {
-  background: oklch(0% 0 0);
-  color: oklch(100% 0 0);
+  background: oklch(0 0 0);
+  color: oklch(1 0 0);
+
   font-size: var(--step-0);
 }

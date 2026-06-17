@@ -7,6 +7,8 @@ export default function Pagination({ currentPage, totalPages, basePath }) {
     <nav className="flex justify-center items-center gap-4 py-8">
       {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
         <Link
+          className="focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2
+"
           key={p}
           href={`${basePath}?page=${p}`}
           aria-current={p === currentPage ? "page" : undefined}
@@ -16,7 +18,12 @@ export default function Pagination({ currentPage, totalPages, basePath }) {
       ))}
 
       {currentPage < totalPages ? (
-        <Link href={`${basePath}?page=${currentPage + 1}`}>Næste</Link>
+        <Link
+          className="focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2"
+          href={`${basePath}?page=${currentPage + 1}`}
+        >
+          Næste
+        </Link>
       ) : (
         <span className="text-white/30 cursor-not-allowed">Næste</span>
       )}
